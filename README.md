@@ -17,8 +17,8 @@ $ python3 manage.py runserver 127.0.0.1:8080
 ```
 - Run the MQTT broker 
 ```bash
-$ sudo docker run -d│wwfug@wwfug-HP-ProBook-430-G5:~/Desktop/django-rest-tutorial/REST$ ls     
- -it -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto                         
+$  docker run -d -it -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto
+                       
 ```
 - Run the gRPC Fibonacci server
 ```bash
