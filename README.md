@@ -15,7 +15,7 @@ $ python3 manage.py migrate
 $ cd REST/
 $ python3 manage.py runserver 127.0.0.1:8080
 ```
-- Run the MQTT broker ((Be sure to run the MQTT broker first))
+- Run the MQTT broker 
 ```bash
 $ sudo docker run -d│wwfug@wwfug-HP-ProBook-430-G5:~/Desktop/django-rest-tutorial/REST$ ls     
  -it -p 1883:1883 -v $(pwd)/mosquitto.conf:/mosquitto/config/mosquitto.conf eclipse-mosquitto                         
@@ -25,13 +25,13 @@ $ sudo docker run -d│wwfug@wwfug-HP-ProBook-430-G5:~/Desktop/django-rest-tutor
 $ cd gRPC/Fib
 $ python3 fib_server.py 
 ```
-- Run the gRPC Log server 
+- Run the gRPC Log server (Be sure to run the MQTT broker first)
 ```bash
 $ cd gRPC/Log
 $ python3 log_server.py 
 ```
 
-- Note that if the build/ directory doesn't exist in any server directory(gRPC/Fib/, REST/ ...)
+- Note that if the build/ directory doesn't exist in any server directory (gRPC/Fib/, REST/ ...)
   run ```make``` before running the server
 
 
